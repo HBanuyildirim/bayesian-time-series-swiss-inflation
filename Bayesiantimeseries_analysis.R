@@ -97,16 +97,10 @@ df <- retail_q %>%
   mutate(
     Date_real = as.Date(Date),
     
-    # Retail sales growth
-    # Similar to GDP growth in Assignment 1.3:
-    # Δy_t = 100 * (log(Y_t) - log(Y_{t-1}))
-    retail_growth = 100 * (log(RetailSales) - log(lag(RetailSales, 1))),
-    
-    # Inflation
-    inflation = 100 * (log(CPI) - log(lag(CPI, 1))),
-    
-    # Exchange rate growth
-    fx_growth = 100 * (log(FX) - log(lag(FX, 1))),
+    # Year-on-year growth rates
+    retail_growth = 100 * (log(RetailSales) - log(lag(RetailSales, 4))),
+    inflation = 100 * (log(CPI) - log(lag(CPI, 4))),
+    fx_growth = 100 * (log(FX) - log(lag(FX, 4))),
     
     # Lagged explanatory variables
     retail_growth_lag = lag(retail_growth, 1),
