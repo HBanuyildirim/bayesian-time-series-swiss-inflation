@@ -33,12 +33,16 @@ Frequency: Quarterly
 
 - Before 2020:
   Inflation has a negative and statistically meaningful effect on retail consumption.
-
 - After 2020:
   The relationship becomes highly uncertain and unstable.
+The analysis does not find a clear and stable relationship after 2020.
+Instead, the results suggest that the relationship between inflation and consumer spending becomes highly uncertain.
+This indicates that macroeconomic relationships may break down or become unstable during periods of economic stress.
 
 - Interpretation:
   The results do not show a clear structural break, but rather an increase in uncertainty.
+  Rather than identifying a clear change in direction, the analysis highlights increased uncertainty after 2020. 
+  This suggests that economic relationships are not stable and may depend on the underlying macroeconomic regime.
 
 - Robustness:
   OLS results confirm the same pattern.
